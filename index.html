@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon </a>
+        <ul>
+            <li> <a href="#">home</a> </li>
+            <li> <a href="#">about</a> </li>
+            <li> <a href="#">hello</a> </li>
+            <li> <a href="#">work</a> </li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">moon light</h2>
+        <a href="#" id="btn">Explore </a>
+        <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>how much do you know about the moon</h2>
+        <p> The Moon is unique in that it is the only spherical satellite orbiting a terrestrial planet. ... Another distinct property the Moon possesses lies in its size compared to the Earth. At 3,475 km, the Moon's diameter is over one fourth that of the Earth's. In relation to its own size, no other planet has a moon as large. The Earth and Moon are tidally-locked. Not only does the Moon influence the oceans' tides, it's the reason why we only see one side, because the Earth and Moon are so in sync. The far side of the Moon wasn't actually seen until a Soviet spacecraft flew by in 1959. Today, we know that the Moon is covered by craters as well as dust and debris from comets, asteroids and meteoroid impacts. We know that the Moon's dark areas, called maria – which is Latin for seas – are not actually seas <br><br>The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth (comparable to the width of Australia),[15]
+             it is the largest natural satellite in the Solar System relative to the size of its planet,[f] the fifth largest satellite in 
+             the Solar System overall, and is larger than any known dwarf planet. Orbiting Earth at an average distance of 384,400 km 
+             (238,900 mi),[16] or about 30 times Earth's diameter, its gravitational influence slightly lengthens Earth's day and is the
+              main driver of Earth's tides. The Moon is classified as a planetary-mass object and a differentiated rocky body, and lacks 
+              any significant atmosphere, hydrosphere, or magnetic field. Its surface gravity is about one-sixth of Earth's (0.1654 g); 
+              Jupiter's moon Io is the only satellite in the Solar System known to have a higher surface gravity and density.<br><br>The 
+              only human lunar missions to date have been those of the United States' Apollo program, which landed twelve men on the surface
+               between 1969 and 1972. These and later uncrewed missions returned lunar rocks that have been used to develop a detailed 
+               geological understanding of the Moon's origins, internal structure, and subsequent history.The moon's gravity pulls at the Earth, causing predictable rises and falls in sea levels known as tides. ... Low tides occur between these two humps. The pull of the moon is also slowing the Earth's rotation, an effect known as tidal braking, which increases the length of our day by 2.3 milliseconds per century.</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value  *0.25 + 'px';
+            moon.style.top = value  *0.65 + 'px';
+            // text.style.marginRight = value * 4 + 'px';
+            // text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+        })
+    </script>
+
+    
+    
+</body>
+</head>
+</html>
