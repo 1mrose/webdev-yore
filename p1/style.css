@@ -1,0 +1,474 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    /* font-size: 10px; */
+    /* font-fami?|???ly: ; */
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section-title {
+    font-size: 4rem;
+    font-weight: 200px;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.section-title span {
+    color: crimson;
+}
+.cta {
+    display: inline block;
+    padding: 7px 35px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 44px;
+    transition: .3s ease;
+    transition-property: background-color, color ;
+     /* my edit  */
+     
+     
+}
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+
+
+
+
+
+
+/* hero section  */
+#hero{
+    background-image: url(./img/manWork.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    
+}
+#hero::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 2.5s ease forwards;
+    animation-delay: 1.5s ;
+    /* my edit  */
+    height: 67px;
+    
+}
+
+
+#hero h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3.5s;
+}
+
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 67px;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 2s ease;
+    animation-delay: 1s;
+}
+
+#hero h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 3s;
+}
+/* my edit */
+#name{
+    padding-bottom: 84px;
+}
+/* my edit end  */
+
+/* end hero section  */
+
+
+
+
+
+
+/* services section  */
+#services {
+    background-color: rgba(233, 233, 233, 0.897);
+}
+#services .service {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#services .service-top h1{
+    font-size: 3.5rem;
+    margin-top: -7;
+}
+
+#services .service-top p {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    line-height: 2rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    padding: 16px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 100px;
+    flex-direction: row; */
+}
+#services .service-item {
+    flex-basis: 70%;
+    display: flex;
+    align-items: flex-start; 
+     justify-content: center;
+    flex-direction: column;
+     padding: 43px; 
+    border-radius: 7px;
+    background-image: url(./img/blackwork.jpg);
+    /* background-size: cover; */
+    margin: 1.5%;
+    color: white;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+#services .service-item span {
+    color: crimson;
+}
+/* #services .service-item::after{
+    content: "";
+    position: absolute;
+    left: ;
+    top: ;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    /* opacity: .3;
+    z-index: .9; */
+} 
+
+#services .services-item .icon {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 10px;
+}
+#services .services-item .icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#services .service-item h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #eeee;
+}
+#services .service-item p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    /* text-align: left; */
+}
+ /* my edit  */
+ #services .service-item:hover {
+    background-color: rgb(211, 136, 136);
+    opacity: .9;
+    box-shadow: 0px 0px 18px 0 gray;
+ }
+ #services .service-bottom .service-item {
+/* flex-basis: 22%;
+margin: 1.5%; */
+
+ }
+
+/* end services section  */
+
+
+
+
+
+
+
+/* projects section  */
+
+#projects {
+    background-color: rgba(233, 233, 233, 0.897);
+}
+
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}   
+#projects .projects-header h1 {
+    margin-bottom: 100px;
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 13px;
+}
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: rgb(59 59 67)
+}
+#projects .project-info h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+#projects .project-info h1 span {
+    color: crimson;
+}
+
+#projects .project-info h3{
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    margin-top: 7px;
+}
+#projects .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .project-img::after{
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+}
+#projects .project-img img{
+    transition: 2s ease transform;
+}
+#projects .project-item:hover .project-img img {
+    transform: scale(1.3);
+}
+
+ /* end of project section  */
+
+
+
+ /* about section  */
+
+ #about {
+    background-color: rgba(233, 233, 233, 0.897);
+ }
+
+#about .about {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  flex-direction: row;
+  height: 100vh;
+}
+#about .col-left{
+    width: 700px;
+    height: 200px;
+    padding-left: 60px;
+    /* padding-top: 20px; */
+    margin-top: 20px;
+}
+#about .col-right {
+    text-align: left;
+    padding: 35px;
+}
+#about .col-right h1{
+    text-align: left;
+}
+
+#about .col-right .cta {
+margin-top: 30px;
+margin-bottom: 50px;
+font-size: 1rem;
+}
+#about .col-right p {
+    margin-bottom: 20px;
+}
+#about .col-right h2 span {
+    color: crimson;
+}
+
+
+  /* end of about s.abpection  */
+
+
+
+
+
+
+
+  /* contect section */
+
+  #contect {
+    background-color: rgba(233, 233, 233, 0.897);
+  }
+
+  #contect .contect {
+      flex-direction: column;
+      /* max-width: 1200px; */
+      
+  }
+  #contect .contect-items{
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      padding: 50px 0;     
+      align-items: center;
+      justify-content: center;
+      
+  }
+  #contect .contect-item {
+      /* border-radius: 13px; */
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+      margin: 30px;
+      justify-content: center;
+      align-items: center;
+     box-shadow: 0px 0px 10px 0 rgb(143, 142, 142);
+     transition: .3s ease box-shadow;
+  }
+  #contect .contect-item:hover {
+      box-shadow: 0px 0px 30px 0 rgb(143, 142, 142) ;
+  }
+#contect .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contect .contect-info h1 {
+font-size: 2.5rem;
+margin-bottom: 7px;
+font-weight: 500;
+
+}
+#contect .contect-info h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+/* end of conetct section  */
+
+
+
+
+
+
+/* keyframes */
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+
+}
+
+@keyframes text_reveal {
+    100%{
+        color: rgba(206, 240, 255, 0.849);
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{ 
+        color: crimson;
+        font-weight: bold;
+    }
+}
+/* end keyframes */
+
+   /* image styling now vid watch 1.30.15  */
+   pic bankfground line crimson 
